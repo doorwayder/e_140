@@ -1,0 +1,415 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\E_140.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Versus.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 215, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About E-140 Transmitter"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    LTEXT           "E-140 Network Data Transmitter",IDC_STATIC,40,17,107,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2006",IDC_STATIC,40,29,69,8
+    DEFPUSHBUTTON   "OK",IDOK,158,34,50,14,WS_GROUP
+END
+
+IDD_E_140_DIALOG DIALOGEX 0, 0, 331, 344
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "E-140"
+MENU IDR_MENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Отсутствие синхронизаци ввода",IDC_RADIO1,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT | WS_GROUP,12,59,125,11
+    CONTROL         "Цифровая синхронизация начала сбора",IDC_RADIO2,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT,12,72,152,11
+    CONTROL         "Цифровая покадровая синхронизация",IDC_RADIO3,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT,12,85,147,11
+    CONTROL         "Аналоговая синхронизация начала сбора",IDC_RADIO4,
+                    "Button",BS_AUTORADIOBUTTON | BS_FLAT,12,97,159,11
+    PUSHBUTTON      "Connect",IDC_BUTTON1,7,318,225,19
+    LISTBOX         IDC_LIST1,240,25,84,286,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Режим аппаратной синхронизации запуска АЦП",IDC_CHECK1,
+                    "Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,12,18,
+                    180,10
+    CONTROL         "List2",IDC_LIST2,"SysListView32",WS_BORDER | WS_TABSTOP,
+                    240,7,84,13,WS_EX_CLIENTEDGE
+    CONTROL         "Разрешить трансляцию сигнала запуска АЦП",IDC_CHECK2,
+                    "Button",BS_AUTOCHECKBOX | BS_FLAT | WS_DISABLED | 
+                    WS_TABSTOP,12,31,180,10
+    GROUPBOX        "Режим ввода",IDC_STATIC,7,48,225,177,BS_RIGHT
+    GROUPBOX        "Тип аналоговой синхронизаци",IDC_STATIC,15,112,208,35,
+                    BS_RIGHT
+    GROUPBOX        "Подрежим аналоговой синхронизаци",IDC_STATIC,15,150,208,
+                    35,BS_RIGHT
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ARROWKEYS | WS_DISABLED,211,190,11,14
+    EDITTEXT        IDC_EDIT1,191,190,20,13,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER | WS_DISABLED
+    LTEXT           "Синхронизация по логическому каналу АЦП:",IDC_STATIC,33,
+                    193,155,8
+    CONTROL         "Синхронизация по уровню сигнала",IDC_RADIO5,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT | WS_DISABLED | WS_GROUP,21,
+                    122,195,9
+    CONTROL         "Синхронизация по переходу сигнала",IDC_RADIO6,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT | WS_DISABLED,21,134,138,9
+    CONTROL         "Синхронизация при обнаружении большего сигнала",
+                    IDC_RADIO7,"Button",BS_AUTORADIOBUTTON | BS_FLAT | 
+                    WS_DISABLED | WS_GROUP,21,161,199,9
+    CONTROL         "Синхронизация при обнаружении меньшего сигнала",
+                    IDC_RADIO8,"Button",BS_AUTORADIOBUTTON | BS_FLAT | 
+                    WS_DISABLED,21,173,196,9
+    LTEXT           "Пороговое значение синхронизации:",IDC_STATIC,60,209,
+                    127,8
+    EDITTEXT        IDC_EDIT2,191,207,30,13,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER | WS_DISABLED
+    GROUPBOX        "Синхронизация",IDC_STATIC,7,7,225,38,BS_RIGHT
+    EDITTEXT        IDC_EDIT3,193,243,30,13,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Число активных логических каналов АЦП:",IDC_STATIC,43,
+                    245,146,8
+    GROUPBOX        "Channels",IDC_STATIC,7,229,225,83,BS_RIGHT
+    EDITTEXT        IDC_EDIT4,193,261,30,13,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Частота дискретизации АЦП модуля (кГц):",IDC_STATIC,42,
+                    262,148,8
+    EDITTEXT        IDC_EDIT5,166,278,20,13,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Величина межкадровой залержки АЦП:",IDC_STATIC,13,280,
+                    135,8
+    EDITTEXT        IDC_EDIT6,193,278,30,13,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    LTEXT           "k=",IDC_STATIC,154,280,8,8
+    PUSHBUTTON      "ControlTable",IDC_BUTTON2,165,297,58,10,BS_FLAT
+    LTEXT           "Управляющая таблица логических каналов -",IDC_STATIC,10,
+                    298,152,8
+    EDITTEXT        IDC_PACKETS,240,323,84,14,ES_AUTOHSCROLL
+    LTEXT           "Передано пакетов:",IDC_STATIC,240,313,70,9
+END
+
+IDD_CTABLEDLG DIALOGEX 0, 0, 315, 78
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ControlTable"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Ввод",IDOK,256,5,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,256,22,50,14
+    PUSHBUTTON      "Загрузить",IDC_BUTTON1,256,39,50,14
+    EDITTEXT        IDC_EDIT1,10,18,14,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Просмотр",IDVBUTTON,191,43,50,14,BS_FLAT
+    EDITTEXT        IDC_EDIT7,27,18,14,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT8,45,18,14,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT9,115,18,14,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT10,79,18,14,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT2,98,18,13,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT3,62,18,14,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT4,133,18,14,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT5,203,23,26,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT6,10,38,67,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    GROUPBOX        "Управляющий байт",IDC_STATIC,4,4,176,68
+    LTEXT           "ЛОГ. КАНАЛ",IDC_STATIC,193,11,47,9
+    PUSHBUTTON      "Сохранить",IDC_BUTTON3,256,56,50,14
+    EDITTEXT        IDC_EDIT11,156,18,19,12,ES_AUTOHSCROLL | ES_READONLY,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      ">",IDC_BUTTON4,232,23,8,13,BS_FLAT
+    PUSHBUTTON      "<",IDC_BUTTON5,192,22,8,13,BS_FLAT
+    LTEXT           "КАНАЛ",IDC_STATIC,32,54,27,9
+    LTEXT           "HEX",IDC_STATIC,157,32,16,9
+    EDITTEXT        IDC_EDIT12,88,45,84,21,ES_MULTILINE | ES_AUTOHSCROLL
+    LTEXT           "Description",IDC_STATIC,88,35,39,8
+END
+
+IDD_NETDLG DIALOGEX 0, 0, 175, 60
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_RIGHT
+CAPTION "Network "
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,114,13,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,114,30,50,14
+    LTEXT           "Порт:",IDC_STATIC,14,13,23,9
+    EDITTEXT        IDC_EDIT1,60,11,43,12,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "",IDC_STATIC,4,0,168,55
+    CONTROL         "Локально",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,59,30,49,9
+    CONTROL         "По сети",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,59,40,
+                    46,9
+    LTEXT           "Тип\r\nтрансляции:",IDC_STATIC,13,31,45,17
+END
+
+IDD_CTDLG DIALOGEX 0, 0, 203, 329
+STYLE DS_ABSALIGN | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_RIGHT
+CAPTION "__ControTable  "
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,0,0,200,329
+END
+
+IDD_ADCDLG DIALOGEX 0, 0, 186, 57
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_RIGHT
+CAPTION "ADC Options "
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,124,13,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,124,30,50,14
+    LTEXT           "BLOCK SIZE:",IDC_STATIC,13,15,43,9
+    EDITTEXT        IDC_EDIT1,58,13,43,12,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "",IDC_STATIC,4,2,177,50
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_E_140_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 324
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 337
+    END
+
+    IDD_CTDLG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 200
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Options"
+    BEGIN
+        MENUITEM "Network",                     ID_OPTIONS_NETWORK
+        MENUITEM "ADC/DAC Device",              ID_OPTIONS_ADCDACDEVICE
+        MENUITEM "Programm",                    ID_OPTIONS_PROGRAMM
+    END
+    MENUITEM "Save As Default",             ID_SAVEASDEFAULT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_EDIT1               "Нулевой бит номера канала"
+    IDC_EDIT7               "Первый бит номера канала"
+    IDC_EDIT8               "Второй бит номера канала"
+    IDC_EDIT9               "Нулевой бит коэффициента усиления"
+    IDC_EDIT10              "Калибровка нуля/Четвертый бит номера канала"
+    IDC_EDIT2               "16 диф./32 общ."
+    IDC_EDIT3               "Третий бит номера канала"
+    IDC_EDIT4               "Первый бит коэффициента усиления"
+    IDC_EDIT5               "Номер логического канала"
+    IDC_EDIT6               "Номер канала"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_EDIT11              "Управляющий байт (в шестнадцатеричной форме)"
+    IDC_BUTTON4             "Следующий канал"
+    IDC_BUTTON5             "Предыдущий канал"
+    IDC_EDIT12              "Описание таблицы"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDVBUTTON               "Просмотр таблицы"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "E_140 MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "E_140\0"
+            VALUE "LegalCopyright", "Copyright (C) 2006\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "E_140.EXE\0"
+            VALUE "ProductName", "E_140 Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDS_ABOUTBOX            "&About E_140..."
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\E_140.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
